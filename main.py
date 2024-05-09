@@ -5,7 +5,8 @@ import numpy as np
 font = cv2.FONT_HERSHEY_SIMPLEX
 font = cv2.FONT_HERSHEY_COMPLEX #OPENCV_FONTS
 
-img = cv2.imread("C:\\test_images\\polygons.png")
+image_path = "C:\Users\DELL\PycharmProjects\opencv_project\test_images"
+img = cv2.imread(image_path)
 
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)   #resmi 0 ile 1'lere ayrılır
 _,threshold = cv2.threshold(gray,240,255,cv2.THRESH_BINARY)
